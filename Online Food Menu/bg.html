@@ -1,0 +1,84 @@
+{%extends 'layout.html'%}
+{%block content%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+
+<title>order your food</title>
+
+<center><body>	<font color = "red"><body>
+  <img src="https://images-platform.99static.com//9yuEdOAEdKgB3DRXFhpXaiGous4=/310x31:895x616/fit-in/500x500/99designs-contests-attachments/72/72801/attachment_72801526" height = 400, width = 100>
+  
+ 
+
+<marquee scrollamount="10">Welcome to burgerium! flash 20% off on this day </marquee>
+</font>
+
+<form action="submission.html" method="POST"id="nameform")>
+			
+<section  class="protein">
+<br>
+
+<font size = "10" color = "maroon"><u> Create your own burger!</u></font><br><br>
+                
+<font size="6">
+	What type of protein would you like?   			<input type="text" name="patty"placeholder="ex:salmon,turkey etc." required>
+       
+<br> <br>       
+
+    How many patties would you like?          <input type="number" name="amount"placeholder="ex:1 or 2 ..." required>
+                 
+
+    <br><br>How do you want your patty cooked<br>
+          
+	<span>Rare</span>
+          <input type="range" name="doneness"  value="3" min="1" max="5">
+          <span>Well-Done</span>
+ 
+<br> 
+   
+	    <span>What toppings would you like?</span>    <br>    <input type="checkbox" name="lettuce">
+ lettuce       <br> <input type="checkbox" name="tomato" >
+     tomato  <br> 
+<input type="checkbox" name="onion">
+ onion 	<br>   <br>
+
+	
+     Would you like to add cheese?
+<br>
+          <input type="radio" name="cheese">Yes         <br> <input type="radio" name="cheese">
+    No</section>
+        <br>
+
+	
+What type of bun would you like? <select name="bun">
+     <option value="sesame">Sesame</option>
+            <option value="potatoe">Potato</option>
+       <option value="pretzel">Pretzel</option>
+          </select>
+  <br>     <br>
+
+	         
+      Select the Sauce you want:          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="ketchup"></option>
+            <option value="mayo"></option>
+            <option value="mustard"></option>
+          </datalist>
+        </section>
+        <br><br>
+
+	        Anything else you want to add?
+          <br>
+          <textarea rows="6" cols="70"></textarea>
+             <br><br>
+
+<button type="submit" form="nameform" value="Submit">Submit</button>
+<input type="reset" value="clear">   
+
+<br><br><br>
+</form>
+  </body></font> </center>
+</html>
+{%endblock%}
+

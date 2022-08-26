@@ -1,0 +1,43 @@
+{%extends 'layout.html'%}
+{%block content%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <title>Drinks</title>
+    <center>
+        <body>
+            <font color = "red">
+                <img src="https://i0.wp.com/www.fb101.com/wp-content/uploads/2019/06/SodaTop.jpg?fit=678%2C298&ssl=1" height = 300, width = 400>
+            </font>
+            <form action = '/submit' method="POST"id="nameform")>
+                <font size = "10" color = "maroon"><u>Beverages</u></font>
+                <font size="6">
+                    <section>
+                        <label for="brand">Brand<label>
+                        <select name="brand" id="brand">
+                            <option value="sprite">Sprite</option>
+                            <option value="coke">Coke</option>
+                            <option value="thumbsup">ThumbsUP</option>
+                            <option value="mazza">Mazza</option>
+                        </select>
+                    </section>
+                    <br>
+                    Quantity<input type="number" name="quant" placeholder="in liters" step="0.25" required>
+                    <br><br>
+                    Number of bottles<input type="number" name="amount" required>
+                    <br><br>
+                    Do You want Cups ?<br>
+                    <input type="radio" name="yes or no" id = "yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="yes or no" id = "no">
+                    <label for="no">No</label>
+                    <br><br>
+
+                    <button type="submit" form="nameform" value="Submit">Submit</button>
+                    <input type="reset" value="clear">  
+
+                </font>
+            </form>
+        </body>
+    </center>
+</html>
+{%endblock%}

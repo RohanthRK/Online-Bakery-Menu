@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Bakery</title>
+      <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Batch 2 Bakery</h1>
+        <strong><nav>
+          <ol class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('Burger') }}">Burger</a><li>
+            <li><a href="{{url_for('Pizza') }}">Pizza</a></li>
+            <li><a href="{{url_for('Sandwich') }}">Sandwich</a></li>
+            <li><a href="{{url_for('Cake') }}">Cakes</a></li>
+            <li><a href="{{url_for('Drinks') }}">Beverages</a></li>
+          </ol>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+        {%block content%} <!--Template Inheritance (layout is base class)-->
+        {%endblock%}<!-- the end of the block-->
+    </div>
+  </body>
+</html>

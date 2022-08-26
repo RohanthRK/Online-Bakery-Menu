@@ -1,0 +1,111 @@
+{%extends 'layout.html'%}
+{%block content%}
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>sandwiches</title>
+   <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+    </style>
+ </head> 
+    <body style ="background-color:rgb(255, 208, 0)">  
+        <section>
+          <section id="overlay">
+
+      <img src="https://image.freepik.com/free-vector/creative-sandwich-icon-logo-illustration_199619-267.jpg" alt="sandwich logo" id="logo" height = 400 , width = 100>
+             <form action="sanswich.html" method="POST">
+                <h1>#sandwiches#</h1>
+                <section class="veg or non-veg">
+                <br>
+          <span>What do  you like to have Veg or Non-Veg?</span>
+          <br>
+          <br>
+          <input type="radio" name="Veg or non-veg" id="Veg" value="Veg">
+          <label for="Veg">Veg</label>
+          <input type="radio" name="Veg or non-veg" id="Non-Veg" value="Non-Veg">
+          <label for="Non-Veg">Non-Veg</label>
+        </section>
+        <br>
+        <section class="crust-type">
+          <label for="crust">What type sandwich would you like?</label>
+          <select name="crust" id="crust">
+            <option value="Grilled Cheese">Grilled Cheese</option>
+            <option value="Tortas">tortas</option>
+            <option value="panani">panani</option>
+            <option value="Roast BEEF sandwich">Roast BEEF sandwich</option>
+            <option value="BLT sandwich">BLT sandwich</option>
+          </select>
+        </section>
+       
+       <br>
+       <section class="toppings">
+          <span>What toppings would you like?</span>
+          <br>
+          <br>
+          <input type="checkbox" name="topping" id="carrot" value="carrot">
+          <label for="carrot">carrot</label>
+           <input type="checkbox" name="topping" id="Greenleaves" value="Greenleaves">
+          <label for="Greenleaves">Greenleaves</label>
+           <input type="checkbox" name="topping" id="Cabage" value="cabage">
+          <label for="cabage">cabage</label>
+          <input type="checkbox" name="topping" id="tomato" value="tomato">
+          <label for="tomato">Tomato</label>
+          <input type="checkbox" name="topping" id="onion" value="onion">
+          <label for="onion">Onion</label>
+        </section>
+        <br>
+        
+        <section class="Cheese">
+          <label for="cheese">What type of cheese would you like?</label>
+          <select name="cheese" id="cheese">
+            <option value="chicken salad">chicken salad</option>
+            <option value="Goat cheese">Goat cheese</option>
+            <option value="Bacon,egg and cheese">Bacon,egg and cheese</option>
+            <option value="tuna melt">tuna melt</option>
+            <option value="cubano">cubano</option>
+          </select>
+        </section>
+        <br>
+        
+        <section class="sauce-selection">
+          <label for="sauce">What type of sauce would you like?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="Spicy Red Sauces"></option>
+            <option value="Peppery Red Sauce"></option>
+            <option value="BBQ Sauce"></option>
+            <option value="ketchup"></option>
+            <option value="mayo"></option>
+            <option value="mustard"></option>
+          </datalist>
+        </section>
+        
+             </form>
+       </section>
+       <br>
+        <section class="bread">
+          <label for="bread"> what type of bread you  would like to bake the sandwich?</label>
+          <select name="bread" id="bread">
+            <option value="kibbled bread "> kibbled bread</option>
+            <option value="whole meal bread">whole meal bread</option>
+            <option value="Rye breads">Rye breads</option>
+            <option value="fruit bread">fruit bread</option>
+          </select>
+        </section>
+        <br>
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <br>
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+
+   </body>
+</html>
+{%endblock%}

@@ -1,0 +1,112 @@
+{%extends 'layout.html'%}
+{%block content%}
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Pizza Villa</title>
+   <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+    </style>
+ </head>
+    <body>
+       <section>
+          <section id="overlay">
+      <img src="https://thumbs.dreamstime.com/b/pizza-logo-vector-art-logo-template-pizza-logo-vector-art-logo-template-good-logo-your-business-food-logo-italian-food-104601030.jpg" alt="Pizza Logo" id="logo" height = 500 , width = 100>
+      
+             <form action="/submit2" method="POST">
+                <h1>Pizza Villa!</h1>
+                <section class="veg or non-veg">
+                <br>
+          <span>Would you like to have Veg or Non-Veg?</span>
+          <br>
+          <br>
+          <input type="radio" name="Veg or non-veg" id="Veg" value="Veg">
+          <label for="Veg">Veg</label>
+          <input type="radio" name="Veg or non-veg" id="Non-Veg" value="Non-Veg">
+          <label for="Non-Veg">Non-Veg</label>
+          
+        </section>
+        <br>
+        <section class="crust-type">
+          <label for="crust">What type of pizza crust would you like?</label>
+          <select name="crust" id="crust">
+            <option value="cheese stuffed crust">Cheese-Stuffed Crust</option>
+            <option value="flatbread">Flat Bread</option>
+            <option value="thin crust">Thin Crust</option>
+            <option value="pizza bagels">Pizza Bagels</option>
+            <option value="neapolitan crust">Neapolitan Crust</option>
+          </select>
+        </section>
+       
+       <br>
+       <section class="toppings">
+          <span>What toppings would you like?</span>
+          <br>
+          <br>
+          <input type="checkbox" name="topping" id="Pepperoni" value="Pepperoni">
+          <label for="Pepperoni">Pepperoni</label>
+           <input type="checkbox" name="topping" id="Mushrooms" value="Mushrooms">
+          <label for="Mushrooms">Mushrooms</label>
+           <input type="checkbox" name="topping" id="Bacon" value="Bacon">
+          <label for="Bacon">Bacon</label>
+          <input type="checkbox" name="topping" id="tomato" value="tomato">
+          <label for="tomato">Tomato</label>
+          <input type="checkbox" name="topping" id="onion" value="onion">
+          <label for="onion">Onion</label>
+        </section>
+        <br>
+        
+        <section class="Cheese">
+          <label for="cheese">What type of cheese would you like?</label>
+          <select name="cheese" id="cheese">
+            <option value="Mozzarella">Mozzarella</option>
+            <option value="Goat cheese">Goat cheese</option>
+            <option value="Pecorino-Romano">Pecorino-Romano</option>
+            <option value="Aged Havarti">Aged Havarti</option>
+            <option value="Gorgonzola">Gorgonzola</option>
+          </select>
+        </section>
+        <br>
+
+        <section class="sauce-selection">
+          <label for="sauce">What type of sauce would you like?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="Spicy Red Sauces"></option>
+            <option value="Peppery Red Sauce"></option>
+            <option value="BBQ Sauce"></option>
+            <option value="ketchup"></option>
+            <option value="mayo"></option>
+            <option value="mustard"></option>
+          </datalist>
+        </section>
+        <br>
+             </form>
+       </section>
+ 
+        <section class="pan">
+          <label for="pan">On what type of pan would you like to bake the pizza?</label>
+          <select name="pan" id="pan">
+            <option value="Pizza Screens ">Pizza Screens </option>
+            <option value="Pizza Stones">Pizza Stones</option>
+            <option value="Cast Iron">Cast Iron Pizza Pans</option>
+            <option value="Regular">Regular (Coupe)</option>
+          </select>
+        </section>
+        <br>
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        
+
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+
+   </body>
+</html>
+{%endblock%}
